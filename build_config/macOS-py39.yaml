@@ -16,9 +16,5 @@ python:
 - '3.9'
 numpy:
 - '1.19'
-blas_impl:
-- mkl
-mkl:
-- 2019
 target_platform:
 - osx-64
