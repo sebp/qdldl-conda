@@ -1,0 +1,35 @@
+{% set name = "qdldl" %}
+{% set version = "0.1.5.post0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: c392c7427651d8b226423c7aba4a0f2338a1f38a4bbdabac6bc4afd8bc934f06
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - cmake
+  host:
+    - numpy >=1.7
+    - pip
+    - python
+    - scipy >=0.13.2
+    - pybind11
+  run:
+    - numpy >=1.7
+    - python
+    - scipy >=0.13.2
+
+about:
+  home: "https://github.com/oxfordcontrol/qdldl-python/"
+  license: Apache 2.0
+  license_family: APACHE
+  summary: "QDLDL, a free LDL factorization routine."
