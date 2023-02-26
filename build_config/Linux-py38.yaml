@@ -1,6 +1,6 @@
 python:
     - '3.8'
 numpy:
-    - '1.16'
+    - '1.20'
 target_platform:
     - linux-64
