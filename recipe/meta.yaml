@@ -10,7 +10,7 @@ source:
   sha256: 69c092f6e1fc23fb779a80a62e6fcdfe2eba05c925860248c4d6754f4736938f
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . -vv"
   script_env:
     - CMAKE_GENERATOR='Visual Studio 16 2019' # [win]
@@ -21,7 +21,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - numpy >=1.7
+    - numpy
     - pip
     - python
     - pybind11
