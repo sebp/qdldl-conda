@@ -2,7 +2,7 @@
 Conda package for qdldl
 ***********************
 
-.. image:: https://github.com/sebp/qdldl-conda/actions/workflows/build.yaml/badge.svg?branch=master)
+.. image:: https://github.com/sebp/qdldl-conda/actions/workflows/build.yaml/badge.svg?branch=master
   :target: https://github.com/sebp/qdldl-conda/actions/workflows/build.yaml
   :alt: Build Status
 
