@@ -5,6 +5,6 @@ numpy:
 blas_impl:
     - mkl
 mkl:
-    - 2022
+    - 2021
 target_platform:
     - linux-64
