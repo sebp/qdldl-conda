@@ -1,5 +1,5 @@
 {% set name = "qdldl" %}
-{% set version = "0.1.5.post3" %}
+{% set version = "0.1.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 69c092f6e1fc23fb779a80a62e6fcdfe2eba05c925860248c4d6754f4736938f
+  sha256: f346a114c8342ee6d4dbd6471eef314199fb268d3bf7b95885ca351fde2b023f
 
 build:
-  number: 3
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   script_env:
     - CMAKE_GENERATOR='Visual Studio 16 2019' # [win]
