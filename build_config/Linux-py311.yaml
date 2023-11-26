@@ -2,9 +2,5 @@ python:
     - '3.11'
 numpy:
     - '1.23'
-blas_impl:
-    - mkl
-mkl:
-    - 2021
 target_platform:
     - linux-64

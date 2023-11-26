@@ -10,7 +10,7 @@ source:
   sha256: f346a114c8342ee6d4dbd6471eef314199fb268d3bf7b95885ca351fde2b023f
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   script_env:
     - CMAKE_GENERATOR='Visual Studio 16 2019' # [win]
